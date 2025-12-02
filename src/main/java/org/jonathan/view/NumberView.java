@@ -37,7 +37,7 @@ public class NumberView {
     /**
      * Metodo responsável por ler a tentativa do usuário, e retornar o número digitado para outra camada
      * @return Tentativa de adivinhação do número aleatório
-     * @exception NumberFormatException Excessão responsável por captar caso o usuário digite algum caracter diferente de um inteiro, e retorna erro personalizado
+     * @throws NumberFormatException Excessão responsável por captar caso o usuário digite algum caracter diferente de um inteiro, e retorna erro personalizado
      */
     public int readNumber(){
         int numberRead = -1;

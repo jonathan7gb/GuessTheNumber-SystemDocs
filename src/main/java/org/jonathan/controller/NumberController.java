@@ -16,10 +16,12 @@ public class NumberController {
     NumberService numberService = new NumberService();
 
     /**
-     * Metodo responsável por rodas o sistema, ele integra as escolhas do usuário com o sistema inteiro.
+     * Metodo responsável por rodar o sistema, ele integra as escolhas do usuário com o sistema inteiro.
      * Caso o usuário digitar 1 -> ele inicia a tentativa de adivinhação
      * Caso o usuário digitar 2 -> ele encerra o sistema
-     * Se o usuário digitar um número diferente desses citados acima, ele retorna um erro e o usuário deve digitar novamente.
+     * Se o usuário digitar um número diferente desses citados anteriormente, ele retorna um erro e o usuário deve digitar novamente.
+     * @see NumberView Classe que recebe e devolve dados ao usuário
+     * @see NumberService Classe que realiza a lógica do sistema
      */
     public void startSystem(){
         while(true){

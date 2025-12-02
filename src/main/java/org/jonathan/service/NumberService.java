@@ -10,23 +10,24 @@ import java.util.Random;
  */
 public class NumberService {
 
-    NumberView nv = new NumberView();
+    NumberView numberView = new NumberView();
 
     /**
      * Metodo principal do sistema, é aqui onde o sistema integra todas as camadas e realiza a lógica do sistema.
      * O Sistema gera um número aleatório, lê a tentativa do usuário e verifica, se for igual ao número aleatório, retorna sucesso.
      * Se a tentiva for maior que o número aleatório, retorna uma mensagem dizendo que o número aleatório é maior.
      * Se a tentiva for menor que o número aleatório, retorna uma mensagem dizendo que o número aleatório é menor
+     * @see NumberService Classe que recebe e devolve dados ao usuário
      */
     public void guessTheNumber(){
         int randomNumber = generateRandomNumber();
         int guessesCount = 0;
         while(true){
-            int numberGuess = nv.readNumber();
+            int numberGuess = numberView.readNumber();
             guessesCount++;
 
             if(numberGuess == randomNumber){
-                nv.showSuccessGuess(guessesCount, randomNumber);
+                numberView.showSuccessGuess(guessesCount, randomNumber);
                 return;
             }else if(numberGuess < randomNumber  ){
                 System.out.println("\n|| === The random number is greater === ||\n");
