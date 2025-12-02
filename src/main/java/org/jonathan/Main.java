@@ -1,7 +1,6 @@
 package org.jonathan;
 
 import org.jonathan.controller.NumberController;
-
 /**
  * <p>Classe Principal do Sistema, onde a aplicação é inicializada</p>
  * @version 1.0.0
