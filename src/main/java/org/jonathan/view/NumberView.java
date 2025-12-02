@@ -6,8 +6,8 @@ public class NumberView {
 
     Scanner sc = new Scanner(System.in);
 
-    public void showSuccessGuess(int guessCount){
-        System.out.println("Congratulations, you guessed the random number. Number of guesses: " + guessCount);
+    public void showSuccessGuess(int guessCount, int randomNumber){
+        System.out.println("\n|| Congratulations, you guessed the random number ("+ randomNumber +"). Number of guesses: " + guessCount + " ||\n");
     }
 
     public int menu(){
